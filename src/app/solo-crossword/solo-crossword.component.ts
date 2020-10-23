@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Puzzle } from '../dbo/puzzle';
 
 @Component({
   selector: 'app-solo-crossword',
@@ -7,9 +8,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SoloCrosswordComponent implements OnInit {
 
-  constructor() { }
+  puzzle: Puzzle;
+
+  constructor() {
+
+   }
 
   ngOnInit() {
   }
 
+  checkWord() {
+
+  }
+
+  solveWord() {
+   
+  }
+  checkPuzzle() {
+
+  }
+
+  solvePuzzle() {
+
+  }
 }

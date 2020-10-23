@@ -3,7 +3,6 @@ export class Puzzle {
     acrossClues: Array<Clues>;
     downClues: Array<Clues>;
     size: number;
-    
 }
 
 export class Line {

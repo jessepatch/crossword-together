@@ -22,8 +22,9 @@ export class SoloCrosswordComponent implements OnInit {
   }
 
   solveWord() {
-   
+    
   }
+
   checkPuzzle() {
 
   }

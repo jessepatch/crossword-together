@@ -7,7 +7,7 @@ export class Puzzle {
 
 export class Line {
     words: Array<string>;
-
+    letters: string;
 }
 
 export class Clues {

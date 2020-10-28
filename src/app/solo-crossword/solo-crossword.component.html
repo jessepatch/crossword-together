@@ -1,3 +1,3 @@
-<div *ngFor="let acrossClues of puzzle.lines, let i = index"><p>{{i}}</p>
-  <div *ngFor="let square of lines.letters, let j = index"><p>{{j}}
+<div *ngFor="let lines of puzzle.lines, let i = index"><p>{{i}}</p>
+  <div *ngFor="let square of lines.words, let j = index"><p>{{square[j]}}
   </p></div></div>

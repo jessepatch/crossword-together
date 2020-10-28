@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { forEach } from '@angular/router/src/utils/collection';
 import { Line, Puzzle } from '../dbo/puzzle';
 
 @Component({
@@ -34,6 +35,8 @@ export class SoloCrosswordComponent implements OnInit {
     line5.words = words5;
     lines = [line1, line2, line3, line4, line5];
     puzzle.lines = lines;
+    this.setPuzzle(puzzle);
+    console.log(puzzle);
   }
 
   checkWord() {
@@ -53,6 +56,14 @@ export class SoloCrosswordComponent implements OnInit {
   }
 
   setPuzzle(puzzle: Puzzle) {
+    for(let i = 0; i < puzzle.size; i++) {
+      for(let j = 0; j < puzzle.lines[i].words.length; j++) {
+        let letters = '';
+        letters = letters + puzzle.lines[i].words[j];
+
+        puzzle.lines[i].letters = letters;
+      }
+    }
     this.puzzle = puzzle;
   }
 }

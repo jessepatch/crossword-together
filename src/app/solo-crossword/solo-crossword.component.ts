@@ -36,7 +36,7 @@ export class SoloCrosswordComponent implements OnInit {
     lines = [line1, line2, line3, line4, line5];
     puzzle.lines = lines;
     this.setPuzzle(puzzle);
-    console.log(puzzle);
+    console.log(this.puzzle); 
   }
 
   checkWord() {
@@ -60,7 +60,8 @@ export class SoloCrosswordComponent implements OnInit {
       for(let j = 0; j < puzzle.lines[i].words.length; j++) {
         let letters = '';
         letters = letters + puzzle.lines[i].words[j];
-
+        console.log(letters);
+        console.log('here');
         puzzle.lines[i].letters = letters;
       }
     }

@@ -1,3 +1,3 @@
 <div *ngFor="let lines of puzzle.lines, let i = index"><p>{{i}}</p>
-  <div *ngFor="let square of lines.letters, let j = index"><p>{{square[j]}}
+  <div *ngFor="let square of lines.letters, let j = index"><p>{{square.charAt(j)}}
   </p></div></div>

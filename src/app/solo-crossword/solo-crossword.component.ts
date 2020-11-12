@@ -60,8 +60,8 @@ export class SoloCrosswordComponent implements OnInit {
       let letters = '';
       for (let j = 0; j < puzzle.lines[i].words.length; j++) {
         letters = letters + puzzle.lines[i].words[j];
-        puzzle.lines[i].letters[j] = letters;
       }
+      puzzle.lines[i].letters[j] = letters;
     }
     this.puzzle = puzzle;
   }
